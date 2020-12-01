@@ -87,11 +87,14 @@ select {
 }
 
 .topline{
+    border-bottom: 1px solid #ececec;
+}
+
+.topline-content{    
     display: flex;
     align-items: center;
     justify-content: space-between;
     min-height: 101px;
-    border-bottom: 1px solid #ececec;
 }
 
 .logo{
