@@ -496,19 +496,23 @@ select {
     align-items: center;
     background-color: #222224;
     flex-grow: 1;
+    justify-content: center;
 }
 
 .offer-card{
     display: flex;
-    justify-content: space-between;
-    margin: 48px auto;
+    justify-content: flex-start;
+    margin-top: 28px;
+    margin-bottom: 28px;
+    width: 100%;
 }
 
-.offer-card__img{
-    display: block;
-    margin: 0 auto auto;
+.offer-card-image{
+    width: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
 }
-    
 
 .offer-card__h3{
     width: 230px;
@@ -519,7 +523,7 @@ select {
 }
 
 .offer-card__span{
-    font-weight: 400;
+    font-weight: 100;
     font-size: 14px;
     display: block;
 }
