@@ -458,3 +458,68 @@ select {
     color: #fff;
     background-color: #f16d7f;
 }
+
+.offer{
+    height: 529px;
+}
+
+.offer-img{
+    background-image: url(img/Layer_38.png);
+    background-repeat: no-repeat;
+    width: 767px;
+}
+
+.offer-h2{
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 53px;
+    color: #fff;
+    margin-top: 127px;
+    margin-left: 37px;
+    
+}
+
+.offer-h2__color{
+    color: #f16d7f;
+}
+
+.offer-h2__bottom{
+    display: block;
+    font-size: 33px;
+    margin-top: -16px;
+}
+
+.offer-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #222224;
+    flex-grow: 1;
+}
+
+.offer-card{
+    display: flex;
+    justify-content: space-between;
+    margin: 48px auto;
+}
+
+.offer-card__img{
+    display: block;
+    margin: 0 auto auto;
+}
+    
+
+.offer-card__h3{
+    width: 230px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+}
+
+.offer-card__span{
+    font-weight: 400;
+    font-size: 14px;
+    display: block;
+}
