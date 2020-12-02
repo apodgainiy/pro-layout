@@ -139,7 +139,7 @@ select {
 }
 
 .browsebutton::after{
-    font-family: "Font Awesome 5 Free";
+    font-family: "FontAwesome";
     content: "\f0d7";
     font-weight: 900;
     padding-left: 9px;
@@ -203,7 +203,7 @@ select {
 }
 
 .myaccount::after{
-    font-family: "Font Awesome 5 Free";
+    font-family: "FontAwesome";
     color: #fff;
     content: "\f0d7";
     font-weight: 900;
@@ -362,7 +362,7 @@ select {
 
 .items-card{
     width: 262px;
-    margin: 40px 0;
+    margin-top: 40px;
 }
 
 .items-img-layer{    
@@ -391,7 +391,7 @@ select {
     font-size: 16px;
     color: #f16d7f;
     margin-top: 8px;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
 }
 
 .items-card-hide{
@@ -429,4 +429,16 @@ select {
 .items-card-add{
     width: 26px;
     margin: 9px 8px 6px 11px;
+}
+
+.browse-product{
+    display: inline-block;
+    margin: 0 auto;
+    padding: 17px 17px 17px 24px;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    color: #fff;
+    background-color: #f16d7f;
 }
