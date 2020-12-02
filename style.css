@@ -527,3 +527,71 @@ select {
     font-size: 14px;
     display: block;
 }
+
+.subscribe{
+    margin-top: 100px;
+    height: 438px;
+    background-image: url(img/Layer_41.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #eee;
+}
+
+.subscribe-comment{
+    flex: 1 1 auto;
+}
+
+.subscribe-line{
+    width: 1px;
+    background-color: #e3e3e3;
+}
+
+.subscribe-form{  
+    flex: 1 1 auto;  
+    font-family: 'Lato', sans-serif;
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 438px;
+}
+
+.subscribe-form__h2{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 24px;
+    margin-top: -30px;
+}
+
+.subscribe-form__p{
+    text-transform: uppercase;
+    font-size: 14px;
+    
+}
+
+.subscribe-form__form{
+    display: flex;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+.subscribe-form__input{
+    color: #838384;
+    padding: 11px 0 11px 28px;
+    border: none;
+    border-top-left-radius: 22px;
+    border-bottom-left-radius: 22px;
+    
+}
+
+.subscribe-form__button{
+    display: flex;
+    align-items: center;
+    padding: 0 21px 0 21px;
+    background-color: #f16d7f;
+    border-top-right-radius: 22px;
+    border-bottom-right-radius: 22px;
+    text-decoration: none;
+    color: #fff;
+}
