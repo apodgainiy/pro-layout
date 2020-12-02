@@ -449,7 +449,7 @@ select {
 
 .browse-product{
     display: inline-block;
-    margin: 0 auto;
+    margin: 56px auto;
     padding: 17px 17px 17px 24px;
     text-decoration: none;
     font-family: 'Lato', sans-serif;
