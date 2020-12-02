@@ -537,17 +537,60 @@ select {
     background-color: #eee;
 }
 
+.subscribe-block{
+    display: flex;
+    width: 100%;
+}
+
 .subscribe-comment{
-    flex: 1 1 auto;
+    flex: 1 1 1170px;
+    display: flex;    
+    justify-content: space-between;
+    font-family: 'Lato', sans-serif;
+    color: #222;
+    margin-top: 110px;
+}
+
+
+.subscribe-comment__avatar{
+    width: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.subscribe-comment__img{    
+    border-radius: 50%;
+    width: 83px;
+    height: 83px;
+}
+
+.subscribe-comment__comment{
+    width: 390px;
+    margin-top: 11px;
+    margin-right: 60px;
+    margin-bottom: 15px;
+}
+
+.subscribe-comment__p{
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+.subscribe-comment__span{
+    color: #f16d7f;
+    font-size: 16px;
+    display: block;
 }
 
 .subscribe-line{
     width: 1px;
     background-color: #e3e3e3;
+    flex: 0 0 1px;
 }
 
 .subscribe-form{  
-    flex: 1 1 auto;  
+    flex: 1 1 1170px;  
     font-family: 'Lato', sans-serif;
     color: #222;
     display: flex;
