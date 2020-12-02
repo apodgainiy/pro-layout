@@ -78,12 +78,29 @@ select {
     outline-offset: 0;
 }
 
+.container-full{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
 
 .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 0 auto;
     max-width: 1170px;
     padding: 0 15px;
     position: relative;
+    width: 100%;
+}
+
+
+.block{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .topline{
@@ -211,9 +228,7 @@ select {
     padding-right: 9px;}
 
 .topnav{
-    padding: 0 230px;
-    display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .topnav a{
@@ -221,15 +236,18 @@ select {
     text-transform: uppercase;
     text-decoration: none;
     font-size: 10pt;
-    display: flex;
-    align-items: center;
-    height: 52px;
     color: #222;
     font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 52px;    
+    width: 100px;
 }
 
 .topnav a:hover{
     color: #e8e8e8;
+    
 }
 
 
@@ -246,37 +264,35 @@ select {
 }
 
 .slidertext{
-    position: relative;
-}
-
-.slidertext h1{
     font-family: 'Lato', sans-serif;
     font-weight: 900;
     text-transform: uppercase;
     font-size: 44px;
     width: 490px;
-    padding-top: 224px;
-    padding-left: 24px;
+    margin-top: -112px;
+    margin-left: 24px;
+    position: relative;    
+    align-self: center;
 }
 
 .slidertext span{
     font-size: 29px;
 }
 
-.slidertext > h1 > span{
+.slidertext > span{
     display: block;
     margin-top: -9px;
 }
 
-.slidertext > h1 > span > span{
+.slidertext > span > span{
     color: #f16d7f;
 }
 
 .box{
     position: absolute;
-    top: 242px;
-    bottom: 8px;
-    left: 0;
+    top: 15px;
+    bottom: 10px;
+    left: -24px;
     right: 0;
     width: 12px;
     background-color: #f16d7f;
