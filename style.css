@@ -638,3 +638,19 @@ select {
     text-decoration: none;
     color: #fff;
 }
+
+.subscribe-comment__line{
+    display: inline-block;
+    width: 38px;
+    height: 4px;
+    background-color: #d6d6d6;
+    margin: 40px 10px;
+}
+
+.line-color{
+    background-color: #f16d7f;
+}
+
+.first-line{
+    margin-left: 0px;
+}
