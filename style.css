@@ -35,6 +35,7 @@ body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  font-family: 'Lato', sans-serif;
 }
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
@@ -91,6 +92,7 @@ select {
     align-items: center;
     margin: 0 auto;
     max-width: 1170px;
+    min-width: 1155px;
     padding: 0 15px;
     position: relative;
     width: 100%;
@@ -116,7 +118,6 @@ select {
 
 .logo{
     margin-right: 35px;
-    font-family: 'Lato', sans-serif;
     text-transform: uppercase;
     font-size: 19pt;
     display: flex;
@@ -141,7 +142,6 @@ select {
 }
 
 .browsebutton{
-    font-family: 'Lato', sans-serif;
     font-size: 10pt;
     color: #222;
     padding-left: 16px;
@@ -165,7 +165,6 @@ select {
 
 .searchform input{
     padding-left: 15px;
-    font-family: 'Lato', sans-serif;
     font-size: 10pt;
     color: #e6e6e6;
     border: none;
@@ -208,7 +207,6 @@ select {
 .myaccount{
     width: 131px;
     height: 39px;
-    font-family: 'Lato', sans-serif;
     font-size: 10pt;
     color: #fff;
     padding-left: 16px;
@@ -232,7 +230,6 @@ select {
 }
 
 .topnav a{
-    font-family: 'Lato', sans-serif;
     text-transform: uppercase;
     text-decoration: none;
     font-size: 10pt;
@@ -264,7 +261,6 @@ select {
 }
 
 .slidertext{
-    font-family: 'Lato', sans-serif;
     font-weight: 900;
     text-transform: uppercase;
     font-size: 44px;
@@ -321,7 +317,6 @@ select {
 
 .categorycontent h2{
     height: 83px;
-    font-family: 'Lato', sans-serif;
     font-weight: 900;
     text-transform: uppercase;
     font-size: 18px;
@@ -356,7 +351,6 @@ select {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'Lato', sans-serif;
     font-weight: 900;
     font-size: 30px;
     color: #222;
@@ -394,7 +388,6 @@ select {
 .items-h3{
     display: flex;
     flex-direction: column;
-    font-family: 'Lato', sans-serif;
     font-weight: 400;
     font-size: 14px;
     color: #222;
@@ -452,7 +445,6 @@ select {
     margin: 56px auto;
     padding: 17px 17px 17px 24px;
     text-decoration: none;
-    font-family: 'Lato', sans-serif;
     font-weight: 900;
     font-size: 16px;
     color: #fff;
@@ -470,7 +462,6 @@ select {
 }
 
 .offer-h2{
-    font-family: 'Lato', sans-serif;
     font-weight: 900;
     text-transform: uppercase;
     font-size: 53px;
@@ -516,7 +507,6 @@ select {
 
 .offer-card__h3{
     width: 230px;
-    font-family: 'Lato', sans-serif;
     font-weight: 400;
     font-size: 20px;
     color: #fff;
@@ -546,7 +536,6 @@ select {
     flex: 1 1 1170px;
     display: flex;    
     justify-content: space-between;
-    font-family: 'Lato', sans-serif;
     color: #222;
     margin-top: 110px;
 }
@@ -590,8 +579,7 @@ select {
 }
 
 .subscribe-form{  
-    flex: 1 1 1170px;  
-    font-family: 'Lato', sans-serif;
+    flex: 1 1 1170px;
     color: #222;
     display: flex;
     flex-direction: column;
@@ -653,4 +641,48 @@ select {
 
 .first-line{
     margin-left: 0px;
+}
+
+.footer-nav{
+    display: flex;
+    width: 100%;
+    margin-top: 105px;
+    margin-bottom: 90px;
+}
+
+.footer-nav__logo{
+    flex: 1 0 435px;
+}
+
+.footer-nav__p{
+    color: #bebebe;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-nav__coll{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 250px;
+    
+}
+
+.footer-nav__header{
+    text-decoration: none;
+    display: flex;
+    text-transform: uppercase;
+    color: #f16d7f;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.footer-nav__item{
+    text-decoration: none;
+    display: flex;
+    text-transform: capitalize;
+    color: #898989;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
