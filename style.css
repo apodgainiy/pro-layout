@@ -101,7 +101,6 @@ select {
 
 .block{
     display: flex;
-    flex-wrap: wrap;
     width: 100%;
 }
 
@@ -795,8 +794,8 @@ select {
 
 
 .collaps{
-    width: 263px;
-    margin: 0 15px;
+    margin: 0 15px;    
+    flex: 0 0 240px;
 }
 
 .collaps-ul{
@@ -850,7 +849,8 @@ select {
     text-decoration: none;
 }
 
-.product{
+.product{display: flex;
+    flex-direction: column;
     
 }
 
@@ -863,7 +863,9 @@ select {
 }
 
 .product-card{
-    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 
