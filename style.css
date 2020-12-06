@@ -389,7 +389,7 @@ select {
     flex-direction: column;
     font-weight: 400;
     font-size: 14px;
-    color: #222;
+    color: inherit;
     text-transform: uppercase;
     margin-left: 16px;
     margin-top: 16px;
@@ -863,8 +863,45 @@ select {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    flex: 0 0 262px;
     
 }
+
+.produkt-filter__item-h{
+    text-transform: uppercase;
+    margin: 12px 0;
+    font-weight: 600;
+    font-size: 14px;    
+    color: #7b7b7b;
+}
+
+.trending-group{
+    
+}
+
+.trending-group__a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;    
+    color: #7b7b7b;
+}
+
+.trending-group__delimiter::after{
+    content: "|";
+    margin: 0 12px;
+}
+
+.trending-size{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.trending-size__item{
+    width: 65px;
+    text-transform: uppercase;
+}
+
+
 
 
 
@@ -883,6 +920,7 @@ select {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    color: #7b7b7b;
 }
 
 
