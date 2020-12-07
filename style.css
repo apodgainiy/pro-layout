@@ -994,7 +994,7 @@ select {
     align-items: center;
     color: #aaa;
     border: 1px solid #aaa;
-    border-radius: 2px;
+    border-radius: 4px;
 }
 
 .product-pagination__link{
@@ -1015,7 +1015,7 @@ select {
     padding: 15px 45px;
     color: #ef5b70;
     border: 1px solid #ef5b70;
-    border-radius: 2px;
+    border-radius: 4px;
 }
 
 .active-link{
