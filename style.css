@@ -314,7 +314,7 @@ select {
     height: 261px;
 }
 
-.categorycontent h2{
+.categorycontent p{
     height: 83px;
     font-weight: 900;
     text-transform: uppercase;
@@ -519,11 +519,11 @@ select {
 
 .subscribe{
     margin-top: 100px;
-    height: 438px;
     background-image: url(img/Layer_41.png);
     background-position: center;
     background-repeat: no-repeat;
     background-color: #eee;
+    background-size: cover;
 }
 
 .subscribe-block{
