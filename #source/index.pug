@@ -1,0 +1,173 @@
+doctype html
+html(lang="ru")
+head
+  meta(charset="UTF-8")
+  title Главная
+  link(rel="preconnect" href="https://fonts.gstatic.com")
+  link(href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap" rel="stylesheet")
+  link(rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css")
+  link(rel="stylesheet" href="css/style.css")
+body
+  header
+    div.container-full.topline
+      div.container
+        div.block.topline-content
+          |
+          |
+          a.logo(href="#")
+            img(src="img/logo.png" alt="logo")
+            | bran
+            span d
+          form.searchform(action="#")
+            a.browsebutton(href="#") Browse
+            input(type="text" placeholder="Search for item...")
+            a(href="#").searchbutton
+              i.fa.fa-search(aria-hidden="true")
+          img.basket(src="img/Forma_1.png" alt="basket")
+          a.myaccount(href="#") My Account
+    div.container
+      nav.block.topnav
+        -
+          var list = ["home", "man", "women", "kids", "accoseriese", "featured", "hot deals"]
+        each item in list
+          a(href="#")= item
+
+
+
+    
+  div.container-full.slider
+    div.container
+      div.block.sliderimg
+        h1.slidertext the brand 
+          span of luxerious
+            span fashion
+          div.box
+
+  div.container
+    div.block.category
+      div.categorycontent
+        div.categoryboxbig(style="background-image: url(img/Layer_30.png)")
+          p hot deal
+            span for men
+          a(href="#")
+        div.categoryboxsmall(style="background-image: url(img/Layer_37.png)")
+          p luxirous &amp; trendy 
+            span accesories
+          a(href="#")       
+      div.categorycontent
+        div.categoryboxsmall(style="background-image: url(img/Layer_32.png)")
+          p 30% offer
+            span women
+          a(href="#")
+        div.categoryboxbig(style="background-image: url(img/Layer_31.png)")
+          p new arrivals
+            span for kids
+          a(href="#")   
+
+  div.container
+    h2.items-h2 Fetured Items
+      span.items-h2-span Shop for items based on what we feautered in this week
+    div.items-wrap    
+      mixin items-card(img, alt, price)
+        .items-card
+          .items-img-layer
+            img.items-img(src=img alt=alt)
+            .items-card-hide
+              a.items-card-a(href="#")
+                img.items-card-add(src="img/Forma%201%20copy.png" alt="add")
+                | Add to Cart
+          p.items-h3= alt
+            span.items-card-price= price
+      +items-card('img/Layer_2.png', 'mango people t-shirt', '$52.00')
+      +items-card('img/Layer_3.png', 'mango people t-shirt', '$52.00')
+      +items-card('img/Layer_4.png', 'mango people t-shirt', '$52.00')
+      +items-card('img/Layer_5.png', 'mango people t-shirt', '$52.00')
+      +items-card('img/Layer_6.png', 'mango people t-shirt', '$52.00')
+      +items-card('img/Layer_7.png', 'mango people t-shirt', '$52.00')
+      +items-card('img/Layer_8.png', 'mango people t-shirt', '$52.00')
+      +items-card('img/Layer_9.png', 'mango people t-shirt', '$52.00')
+
+    a.browse-product(href="#") Browse All Product
+      i.fa.fa-long-arrow-right(aria-hidden="true")
+
+  div.container
+    div.block.offer
+      div.offer-img
+        h2.offer-h2 30%
+          span.offer-h2__color offer
+          span.offer-h2__bottom for women
+      div.offer-info
+        mixin offer-card(img, alt, h, p)
+          div.offer-card
+            div.offer-card-image
+              img.offer-card__img(src=img alt=alt)
+            div.offer-card-text
+              h3.offer-card__h3= h
+                span.offer-card__span= p
+        +offer-card('img/Forma_1%20(1).png', 'car', 'Free Delivery', 'Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.')
+        +offer-card('img/Forma_1%20(2).png', 'offer', 'Sales & discounts', 'Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.')
+        +offer-card('img/Forma_1%20(3).png', 'king', 'Quality assurance', 'Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.')
+
+  div.cotainer-full.subscribe
+    div.container
+      div.subscribe-block
+       div.subscribe-comment
+         div.subscribe-comment__avatar
+           img.subscribe-comment__img(src="img/Layer_40.png" alt="avatar")
+         div.subscribe-comment__comment
+           i “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”
+           p.subscribe-comment__p
+             span.subscribe-comment__span Bin Burhan
+           | Dhaka, Bd
+           div.subscribe-comment__line.first-line
+           div.subscribe-comment__line.line-color
+           div.subscribe-comment__line
+       div.subscribe-line
+       div.subscribe-form
+         h2.subscribe-form__h2 subscribe
+         p.subscribe-form__p for our newletter and promotion
+         form.subscribe-form__form(action="#")
+           input.subscribe-form__input(type="text" placeholder="Enter Your Email")
+           a.subscribe-form__button(href="#") Subscribe
+
+  div.container
+    footer.footer-nav
+      div.footer-nav__logo
+        a.logo(href="#")
+          img(src="img/logo.png" alt="logo")
+          | bran
+          span d
+        p.footer-nav__p Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.
+        p.footer-nav__p Efficiently plagiarize 24/365 action items and focused infomediaries. Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.
+
+      div.footer-nav__coll
+        a.footer-nav__header(href="#") company
+        -
+          var list = ["home", "shop", "about", "how it works", "contact"]
+        each item in list
+          a.footer-nav__item(href="#")= item
+      div.footer-nav__coll
+        a.footer-nav__header(href="#") information
+        -
+          var list = ["tearms & condition", "privacy policy", "how to buy", "how to sell", "promotion"]
+        each item in list
+          a.footer-nav__item(href="#")= item
+      div.footer-nav__coll
+        a.footer-nav__header(href="#") shop category
+        -
+          var list = ["men", "women", "child", "apparel", "brows all"]
+        each item in list
+          a.footer-nav__item(href="#")= item
+
+  div.container-full.footer-color
+    footer.container
+      div.footer
+        p.footer-copyright © 2017  Brand  All Rights Reserved.
+        mixin link(href)
+          a.footer-social(href=href)
+            i(class!=attributes.class aria-hidden="true")
+        +link('#')(class="fa fa-facebook")
+        +link('#')(class="fa fa-twitter")
+        +link('#')(class="fa fa-linkedin")
+        +link('#')(class="fa fa-pinterest-p")
+        +link('#')(class="fa fa-google-plus")
