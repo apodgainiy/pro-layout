@@ -9,7 +9,23 @@ header
                     | bran
                     span d
                 form.searchform(action="#")
-                    a.browsebutton(href="#") Browse
+                    div.dropdown
+                        a.browsebutton(href="#") Browse
+                        div.dropdown-child
+                            div.dropdown-child__menu
+                                p.dropdown-header women
+                                div.dropdown-child__nav
+                                    -
+                                        var list = ["Dresses", "Tops", "Sweaters/Knits", "Jackets/Coats", "Blazers", "Denim", "Leggins/Pants", "Skirts/Shorts", "Accessories"]
+                                    each item in list
+                                        a.dropdown-link(href = "#")= item
+                                p.dropdown-header men
+                                div.dropdown-child__nav
+                                    -
+                                        var list = ["Tees/Tank tops", "Shirts/Polos", "Sweaters", "Sweatshirts/Hoodies", "Blazers", "Jackets/vests"]
+                                    each item in list
+                                        a.dropdown-link(href = "#")= item
+
                     input(type="text" placeholder="Search for item...")
                     a(href="#").searchbutton
                         i.fa.fa-search(aria-hidden="true")

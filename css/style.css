@@ -162,6 +162,55 @@ select {
     padding-right: 9px;
 }
 
+.dropdown{
+    position: relative;
+}
+
+.dropdown-child{
+    position: absolute;
+    opacity: 0;
+    background-color: #ffffff;
+    width: 260px;
+    transition: .5s;
+}
+
+.dropdown-child__menu{
+    margin: 11px 18px;
+}
+
+.dropdown-header{
+    text-transform: uppercase;
+    border-bottom: 1px solid #e8e8e8;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.dropdown-link{
+    text-decoration: none;
+    display: block;
+    margin-left: 6px;
+    margin-top: 7px;
+    font-size: 14px;
+    color: #4f4f4f;
+}
+
+.dropdown-child__nav:after{
+    content: "";
+    display: block;
+    margin-bottom: 19px;
+}
+
+.dropdown-child__menu:last-of-type{
+    margin-bottom: 0px;
+}
+
+.dropdown:hover .dropdown-child{
+    opacity: 1;
+    flex-direction: column;
+    z-index: 10;
+    transition: 2s;
+}
+
 .searchform input{
     padding-left: 15px;
     font-size: 10pt;
