@@ -1,0 +1,23 @@
+header
+    div.container-full.topline
+        div.container
+            div.block.topline-content
+                |
+                |
+                a.logo(href="#")
+                    img(src="img/logo.png" alt="logo")
+                    | bran
+                    span d
+                form.searchform(action="#")
+                    a.browsebutton(href="#") Browse
+                    input(type="text" placeholder="Search for item...")
+                    a(href="#").searchbutton
+                        i.fa.fa-search(aria-hidden="true")
+                img.basket(src="img/Forma_1.png" alt="basket")
+                a.myaccount(href="#") My Account
+    div.container
+        nav.block.topnav
+            -
+                var list = ["home", "man", "women", "kids", "accoseriese", "featured", "hot deals"]
+            each item in list
+                a(href="#")= item
