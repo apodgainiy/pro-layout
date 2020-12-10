@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3973ba2d-7f20-4167-8c45-8ee6a5febc9c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/#source/est.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/#source/megamenuwomen.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/#source/pug/include/header.pug" beforeDir="false" afterPath="$PROJECT_DIR$/#source/pug/include/header.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#source/pug/megamenufeatured.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/#source/pug/megamenuhotdeals.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/checkout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/product.html" afterDir="false" />
-    </list>
+    <list default="true" id="3973ba2d-7f20-4167-8c45-8ee6a5febc9c" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,7 +46,7 @@
       <updated>1607440090186</updated>
       <workItem from="1607440092959" duration="30000" />
       <workItem from="1607494566111" duration="15305000" />
-      <workItem from="1607571792954" duration="22830000" />
+      <workItem from="1607571792954" duration="23288000" />
     </task>
     <servers />
   </component>
