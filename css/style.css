@@ -110,6 +110,7 @@ select {
 
 .topline-content{    
     display: flex;
+    width: 100%;
     align-items: center;
     justify-content: space-between;
     min-height: 101px;
@@ -168,11 +169,12 @@ select {
 }
 
 .dropdown-child{
+    z-index: -1;
     position: absolute;
     opacity: 0;
     background-color: #ffffff;
     width: 260px;
-    transition: .2s;
+    transition: opacity .2s;
     top: auto;
 }
 
@@ -208,9 +210,8 @@ select {
 
 .dropdown:hover > .dropdown-child{
     opacity: 1;
-    flex-direction: column;
-    z-index: 10;
-    transition: 0.5s;
+    z-index: 1;
+    transition: opacity 0.5s;
 }
 
 .searchform input{
@@ -276,6 +277,7 @@ select {
     padding-right: 9px;}
 
 .topnav{
+    display: flex;
     justify-content: center;
 }
 
