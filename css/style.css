@@ -281,7 +281,7 @@ select {
     justify-content: center;
 }
 
-.topnav a{
+.topnav-a{
     text-transform: uppercase;
     text-decoration: none;
     font-size: 10pt;
@@ -294,7 +294,7 @@ select {
     width: 100px;
 }
 
-.topnav a:hover{
+.topnav-a:hover{
     color: #e8e8e8;
     border-bottom: 3px solid #ef5b70;
 }

@@ -47,11 +47,11 @@ nav.topnav
         - for (var i=0; i<linkarr.length; i++)
             if linkarr[i][2].length > 0
                 div.dropdown
-                    a(class!=attributes.class href=linkarr[i][1])= linkarr[i][0]
+                    a.topnav-a(class!=attributes.class href=linkarr[i][1])= linkarr[i][0]
                     div.dropdown-child(style="top: 50px")
                         +include(linkarr[i][2])
             else
-                a(class!=attributes.class href=linkarr[i][1])= linkarr[i][0]
+                a.topnav-a(class!=attributes.class href=linkarr[i][1])= linkarr[i][0]
 
     +nav([["home", "href='#'", []],
         ["man", "href='#'", []],
