@@ -110,6 +110,7 @@ select {
 
 .topline-content{    
     display: flex;
+    width: 100%;
     align-items: center;
     justify-content: space-between;
     min-height: 101px;
@@ -160,6 +161,57 @@ select {
     font-weight: 900;
     padding-left: 9px;
     padding-right: 9px;
+}
+
+.dropdown{
+    position: relative;
+    display: flex;
+}
+
+.dropdown-child{
+    z-index: -1;
+    position: absolute;
+    opacity: 0;
+    background-color: #ffffff;
+    width: 260px;
+    transition: opacity .2s;
+    top: auto;
+}
+
+.dropdown-child__menu{
+    margin: 11px 18px;
+}
+
+.dropdown-header{
+    text-transform: uppercase;
+    border-bottom: 1px solid #e8e8e8;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.dropdown-link{
+    text-decoration: none;
+    display: block;
+    margin-left: 6px;
+    margin-top: 7px;
+    font-size: 14px;
+    color: #4f4f4f;
+}
+
+.dropdown-child__nav:after{
+    content: "";
+    display: block;
+    margin-bottom: 19px;
+}
+
+.dropdown-child__menu:last-of-type{
+    margin-bottom: 0px;
+}
+
+.dropdown:hover > .dropdown-child{
+    opacity: 1;
+    z-index: 1;
+    transition: opacity 0.5s;
 }
 
 .searchform input{
@@ -225,10 +277,11 @@ select {
     padding-right: 9px;}
 
 .topnav{
+    display: flex;
     justify-content: center;
 }
 
-.topnav a{
+.topnav-a{
     text-transform: uppercase;
     text-decoration: none;
     font-size: 10pt;
@@ -241,21 +294,20 @@ select {
     width: 100px;
 }
 
-.topnav a:hover{
+.topnav-a:hover{
     color: #e8e8e8;
     border-bottom: 3px solid #ef5b70;
 }
 
 
 .slider{
-    min-height: 614px;
     background-color: #e8e8e8;
     
 }
 
 .sliderimg{
     min-height: 614px;
-    background-image: url(img/slider.png);
+    background-image: url(../img/slider.png);
     background-position: 20px -144px;
 }
 
@@ -314,7 +366,7 @@ select {
     height: 261px;
 }
 
-.categorycontent h2{
+.categorycontent p{
     height: 83px;
     font-weight: 900;
     text-transform: uppercase;
@@ -452,10 +504,11 @@ select {
 
 .offer{
     height: 529px;
+    margin-bottom: 100px;
 }
 
 .offer-img{
-    background-image: url(img/Layer_38.png);
+    background-image: url(../img/Layer_38.png);
     background-repeat: no-repeat;
     width: 767px;
 }
@@ -518,12 +571,12 @@ select {
 }
 
 .subscribe{
-    margin-top: 100px;
-    height: 438px;
-    background-image: url(img/Layer_41.png);
+    /*margin-top: 100px;*/
+    background-image: url(../img/Layer_41.png);
     background-position: center;
     background-repeat: no-repeat;
     background-color: #eee;
+    background-size: cover;
 }
 
 .subscribe-block{
@@ -976,7 +1029,7 @@ select {
 
 .subscribe-product{
     height: 438px;
-    background-image: url(img/Layer_41.png);
+    background-image: url(../img/Layer_41.png);
     background-position: center;
     background-repeat: no-repeat;
     background-color: #eee;
