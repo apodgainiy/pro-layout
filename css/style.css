@@ -164,6 +164,7 @@ select {
 
 .dropdown{
     position: relative;
+    display: flex;
 }
 
 .dropdown-child{
@@ -171,7 +172,8 @@ select {
     opacity: 0;
     background-color: #ffffff;
     width: 260px;
-    transition: .5s;
+    transition: .2s;
+    top: auto;
 }
 
 .dropdown-child__menu{
@@ -204,11 +206,11 @@ select {
     margin-bottom: 0px;
 }
 
-.dropdown:hover .dropdown-child{
+.dropdown:hover > .dropdown-child{
     opacity: 1;
     flex-direction: column;
     z-index: 10;
-    transition: 2s;
+    transition: 0.5s;
 }
 
 .searchform input{
