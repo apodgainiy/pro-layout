@@ -30,7 +30,6 @@ div.container-full.topline
                     i.fa.fa-search(aria-hidden="true")
             img.basket(src="img/Forma_1.png" alt="basket")
             a.myaccount(href="#") My Account
-
 mixin include(menu)
     - var str = menu
         if str == "megamenuwomen"
@@ -39,8 +38,6 @@ mixin include(menu)
             include megamenu/megamenufeatured
         if str == "megamenuhotdeals"
             include megamenu/megamenuhotdeals
-
-
 nav.topnav
     mixin nav(link)
         - var linkarr = link
