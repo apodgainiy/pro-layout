@@ -11,7 +11,7 @@ header
                 form.searchform(action="#")
                     div.dropdown
                         a.browsebutton(href="#") Browse
-                        div.dropdown-child
+                        div.dropdown-child(style="top: 36px")
                             div.dropdown-child__menu
                                 p.dropdown-header women
                                 div.dropdown-child__nav
@@ -25,15 +25,38 @@ header
                                         var list = ["Tees/Tank tops", "Shirts/Polos", "Sweaters", "Sweatshirts/Hoodies", "Blazers", "Jackets/vests"]
                                     each item in list
                                         a.dropdown-link(href = "#")= item
-
                     input(type="text" placeholder="Search for item...")
                     a(href="#").searchbutton
                         i.fa.fa-search(aria-hidden="true")
                 img.basket(src="img/Forma_1.png" alt="basket")
                 a.myaccount(href="#") My Account
+
+    mixin include(menu)
+        - var str = menu
+            if str == "megamenuwomen"
+                include megamenu/megamenuwomen
+            if str == "megamenufeatured"
+                include megamenu/megamenufeatured
+            if str == "megamenuhotdeals"
+                include megamenu/megamenuhotdeals
+
     div.container
         nav.block.topnav
-            -
-                var list = ["home", "man", "women", "kids", "accoseriese", "featured", "hot deals"]
-            each item in list
-                a(href="#")= item
+            mixin nav(link)
+                - var linkarr = link
+                - for (var i=0; i<linkarr.length; i++)
+                    if linkarr[i][1].length > 0
+                        div.dropdown
+                            a= linkarr[i][0]
+                            div.dropdown-child(style="top: 50px")
+                                +include(linkarr[i][1])
+                    else
+                        a= linkarr[i][0]
+
+            +nav([["home",[]],
+                ["man",[]],
+                ["women", ["megamenuwomen"]],
+                ["kids",[]],
+                ["accessories",[]],
+                ["featured",["megamenufeatured"]],
+                ["hot deals",["megamenuhotdeals"]]])
