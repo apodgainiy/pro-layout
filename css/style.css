@@ -347,6 +347,7 @@ select {
 
 .category{
     display: flex;
+    width: 100%;
     justify-content: space-between;
     margin-top: 76px;
 }
@@ -503,8 +504,9 @@ select {
 }
 
 .offer{
-    height: 529px;
     margin-bottom: 100px;
+    display: flex;
+    width: 100%;
 }
 
 .offer-img{
@@ -520,7 +522,7 @@ select {
     color: #fff;
     margin-top: 127px;
     margin-left: 37px;
-    
+    margin-bottom: 290px;
 }
 
 .offer-h2__color{
