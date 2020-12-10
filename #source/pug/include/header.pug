@@ -45,18 +45,18 @@ header
             mixin nav(link)
                 - var linkarr = link
                 - for (var i=0; i<linkarr.length; i++)
-                    if linkarr[i][1].length > 0
+                    if linkarr[i][2].length > 0
                         div.dropdown
-                            a= linkarr[i][0]
+                            a(class!=attributes.class href=linkarr[i][1])= linkarr[i][0]
                             div.dropdown-child(style="top: 50px")
-                                +include(linkarr[i][1])
+                                +include(linkarr[i][2])
                     else
-                        a= linkarr[i][0]
+                        a(class!=attributes.class href=linkarr[i][1])= linkarr[i][0]
 
-            +nav([["home",[]],
-                ["man",[]],
-                ["women", ["megamenuwomen"]],
-                ["kids",[]],
-                ["accessories",[]],
-                ["featured",["megamenufeatured"]],
-                ["hot deals",["megamenuhotdeals"]]])
+            +nav([["home", "href='#'", []],
+                ["man", "href='#'", []],
+                ["women", "href='#'", ["megamenuwomen"]],
+                ["kids", "href='#'", []],
+                ["accessories", "href='#'", []],
+                ["featured", "href='#'", ["megamenufeatured"]],
+                ["hot deals", "href='#'", ["megamenuhotdeals"]]])
