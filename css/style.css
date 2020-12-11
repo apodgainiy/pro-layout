@@ -1003,7 +1003,7 @@ select {
 }
 
 .sort-menu__name::after{
-    font-family: "FontAwesome";
+    font-family: "FontAwesome", sans-serif;
     content: "\f0d7";
     margin-left: 20px;
 }
@@ -1080,7 +1080,7 @@ select {
 
 
 .product-pagination:first-of-type::before{
-    font-family: "FontAwesome";    
+    font-family: "FontAwesome", sans-serif;
     content: "\f053";
     margin-left: 15px;
     margin-right: 10px;
@@ -1093,11 +1093,115 @@ select {
 }
 
 .product-pagination:last-of-type::after{
-    font-family: "FontAwesome";    
+    font-family: "FontAwesome", sans-serif;
     content: "\f054";
     margin-left: 10px;
     margin-right: 15px;
 }
+
+.checkout{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.checkout-item{
+    width: 100%;
+    border-bottom: 1px solid #b3b2b2;
+}
+
+.checkout-item__title-number{
+    display: inline-block;
+    width: 35px;
+}
+
+.checkout-item__title{
+    font-size: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 15px 0;
+}
+
+.checkout-card__wrap{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 35px;
+}
+
+.checkout-card{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.checkout-card__column{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+}
+
+.checkout-card__title{
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.checkout-card__text{
+    font-size: 13px;
+    font-weight: 400;
+    color: #b3b2b2;
+    margin: 15px 0 30px 0;
+}
+
+.checkout-card__form{
+    display: flex;
+    flex-direction: column;
+}
+
+.checkout-card__checkbox{
+
+}
+
+.checkout-card__label-checkbox{
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.checkout-text__icon{
+    margin: 0;
+}
+.checkout-text__icon::before{
+    font-family: "FontAwesome";
+    content: "\f101";
+    margin-right: 10px;
+}
+
+.checkout-card__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 900;
+    padding: 18px 0;
+    color: #222222;
+    border: 1px solid #b3b2b2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
