@@ -83,19 +83,20 @@
               <p class="checkout-card__title">check as a guest or register</p>
               <p class="checkout-card__text">Register with us for future convenience</p>
               <form class="checkout-card__form">
-                <p>
-                  <input class="checkout-card__checkbox" type="checkbox" id="checkout">
-                  <label class="checkout-card__label-checkbox" for="checkout">checkout as guest</label>
-                </p>
-                <p>
-                  <input class="checkout-card__checkbox" type="checkbox" id="register">
-                  <label class="checkout-card__label-checkbox" for="register">register</label>
-                </p>
+                <div class="checkout-card__radio-group">
+                  <input class="checkout-card__radio" type="radio" id="checkout" name="reg">
+                  <label class="checkout-card__label-radio" for="checkout">checkout as guest</label>
+                </div>
+                <div class="checkout-card__radio-group">
+                  <input class="checkout-card__radio" type="radio" id="register" name="reg">
+                  <label class="checkout-card__label-radio" for="register">register</label>
+                </div>
               </form>
               <p class="checkout-card__title">register and save time!</p>
               <p class="checkout-card__text">Register with us for future convenience</p>
               <p class="checkout-card__text checkout-text__icon">Fast and easy checkout</p>
-              <p class="checkout-card__text checkout-text__icon">Easy access to your order history and status</p><a class="checkout-card__button" href="#">continue</a>
+              <p class="checkout-card__text checkout-text__icon">Easy access to your order history and status</p>
+              <div class="checkout-card__button-wrap"><a class="checkout-card__button" href="#">continue</a></div>
             </div>
             <div class="checkout-card__column">
               <p class="checkout-card__title">already registed?</p>
@@ -104,8 +105,8 @@
               <input class="checkout-card__textbox" type="text" id="email">
               <label class="checkout-card__label-text" for="password">password</label>
               <input class="checkout-card__textbox" type="text" id="password">
-              <p class="checkout-card__text" id="alert">Required Fields</p>
-              <div class="checkout-card__button-wrap"><a class="checkout-card__button" href="#">log in</a><a class="checkout-card__text" href="#">Forgot Password?</a></div>
+              <p class="checkout-card__text" id="alert">* Required Fields</p>
+              <div class="checkout-card__button-wrap"><a class="checkout-card__button" href="#">log in</a><a class="checkout-card__button-text" href="#">Forgot Password?</a></div>
             </div>
           </div>
         </div>

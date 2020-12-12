@@ -23,17 +23,18 @@ body
                             p.checkout-card__title check as a guest or register
                             p.checkout-card__text Register with us for future convenience
                             form.checkout-card__form
-                                p
-                                    input.checkout-card__checkbox(type="checkbox" id="checkout")
-                                    label.checkout-card__label-checkbox(for="checkout") checkout as guest
-                                p
-                                    input.checkout-card__checkbox(type="checkbox" id="register")
-                                    label.checkout-card__label-checkbox(for="register") register
+                                div.checkout-card__radio-group
+                                    input.checkout-card__radio(type="radio" id="checkout" name="reg")
+                                    label.checkout-card__label-radio(for="checkout") checkout as guest
+                                div.checkout-card__radio-group
+                                    input.checkout-card__radio(type="radio" id="register" name="reg")
+                                    label.checkout-card__label-radio(for="register") register
                             p.checkout-card__title register and save time!
                             p.checkout-card__text Register with us for future convenience
                             p.checkout-card__text.checkout-text__icon Fast and easy checkout
                             p.checkout-card__text.checkout-text__icon Easy access to your order history and status
-                            a.checkout-card__button(href="#") continue
+                            div.checkout-card__button-wrap
+                                a.checkout-card__button(href="#") continue
                         div.checkout-card__column
                             p.checkout-card__title already registed?
                             p.checkout-card__text Please log in below
@@ -41,10 +42,10 @@ body
                             input.checkout-card__textbox(type="text" id="email")
                             label.checkout-card__label-text(for="password") password
                             input.checkout-card__textbox(type="text" id="password")
-                            p.checkout-card__text(id="alert") Required Fields
+                            p.checkout-card__text(id="alert") * Required Fields
                             div.checkout-card__button-wrap
                                 a.checkout-card__button(href="#") log in
-                                a.checkout-card__text(href="#") Forgot Password?
+                                a.checkout-card__button-text(href="#") Forgot Password?
         div.checkout-item
             p.checkout-item__title
                 span.checkout-item__title-number 02.
@@ -68,3 +69,4 @@ body
     include include/subscribe
     include include/footernav
     include include/footercopyright
+
